@@ -1,0 +1,55 @@
+.logo {
+    max-width: 250px;
+    margin: 0 auto;
+}
+
+.bg-light-blue {
+    background-color: aqua;
+}
+
+.container-signup {
+    max-width: 290px;
+    margin: 30px auto;
+}
+
+.form-control {
+    background-color: #f9f9f9;
+    border: none;
+    box-shadow: none;
+    border-radius: 0;
+    font-size: 0.8rem;
+}
+
+.form-control:focus {
+    box-shadow: none;
+    background-color: #f7f7f7;
+}
+
+.top-10 {
+    top: 10px;
+}
+
+
+/* Masonry CSS */
+.container-masonry {
+    column-count: 3;
+    column-gap: 10px;
+}
+
+.container-masonry img {
+    max-width: 100%;
+    display: block;
+}
+
+.container-masonry > div {
+    margin: 0;
+    display: grid;
+    grid-template-rows: 2fr auto;
+    margin-bottom: 10px;
+    break-inside: avoid;
+    border-radius: 5px;
+    background-color: white;
+}
+.container-masonry > div:nth-child(even) {
+    background-color: rgb(187, 187, 187);
+}

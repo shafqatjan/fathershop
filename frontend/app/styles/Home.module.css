@@ -1,0 +1,62 @@
+.logo {
+  max-width: 250px;
+  margin: 0 auto;
+}
+
+.containerSignup {
+  max-width: 290px;
+  margin: 30px auto;
+}
+
+.formControl {
+  background-color: #f9f9f9;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  font-size: 0.8rem;
+}
+
+.formControl:focus {
+  box-shadow: none;
+  background-color: #f7f7f7;
+}
+
+.languageSwitch{
+  position: absolute;
+  top: 10px;
+}
+
+.terms {
+  position: absolute;
+  bottom: 10px;
+  left: 15%;
+
+}
+
+.dropdownToggle::after {
+  margin-top: 8px
+}
+
+/* Masonry CSS */
+.containerMasonry {
+  column-count: 3;
+  column-gap: 20px;
+}
+
+.containerMasonry img {
+  max-width: 100%;
+  display: block;
+}
+
+.containerMasonry > div {
+  margin: 0;
+  display: grid;
+  grid-template-rows: 2fr auto;
+  margin-bottom: 20px;
+  break-inside: avoid;
+  border-radius: 15px;
+  background-color: white;
+}
+.containerMasonry > div:nth-child(even) {
+  background-color: rgb(187, 187, 187);
+}
