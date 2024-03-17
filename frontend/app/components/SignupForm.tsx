@@ -4,7 +4,13 @@ import { useState } from 'react';
 import styles from '../styles/Home.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { setEmail, setFullname, setPassword, setPhone, submitSignup, validateField } from '../redux/Features/signup/signupSlice';
+import 'intl-tel-input/build/css/intlTelInput.css';
+import intlTelInput from 'intl-tel-input';
 
+const input = document.querySelector("#phone");
+intlTelInput(input, {
+    utilsScript: "path/to/utils.js"
+});
 const SignupForm = () => {
   const dispatch = useDispatch();
 
